@@ -8,6 +8,8 @@ header {
     background-color: #6c63ff;
     padding: 20px 0;
     text-align: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 header h1 {
@@ -20,8 +22,8 @@ header h1 {
 .container {
     display: flex;
     justify-content: flex-start; /* change from 'space-between' to 'flex-start' */
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 1350px;
+    margin: 20px auto;
 }
 
 
@@ -31,6 +33,7 @@ header h1 {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
+  
 }
 
 .resume-display-container {
@@ -155,5 +158,27 @@ button[type="button"] {
     margin-right: auto;
     margin-top: 3px;
     margin-bottom: 10px;
+}
+
+#home-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: #fff;
+    color: #6c63ff;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+    border-radius: 5px;
+}
+
+#home-btn:hover {
+    background-color: #5b54e2;
+    color: #fff;
 }
 
