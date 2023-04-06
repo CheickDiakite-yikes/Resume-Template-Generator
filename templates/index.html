@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="title">Resume Template Generator</h1>
+            <nav>
+    <button class="generate-btn" id="tech-resume-btn">Generate Tech Resume</button>
+    <button class="generate-btn" id="finance-resume-btn">Generate Finance Resume</button>
+    <a href="/resume-builder" class="generate-btn">Create Your Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="resume-container">
+            <!-- The generated resume templates will be displayed here -->
+        </div>
+    </main>
+  
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+function loadImage(template) {
+    const imageUrl = `/resume/${template}?${new Date().getTime()}`;
+    const img = `<img src="${imageUrl}" alt="${template} resume template" class="responsive-image">`;
+    const downloadBtn = `<a href="${imageUrl}" download="${template}_resume.png" class="download-btn">Download</a>`;
+    $('#resume-container').html(img + downloadBtn);
+}
+
+$('#tech-resume-btn').on('click', function () {
+    loadImage('tech');
+});
+
+$('#finance-resume-btn').on('click', function () {
+    loadImage('finance');
+});
+
+
+      
+    </script>
+</body>
+</html>

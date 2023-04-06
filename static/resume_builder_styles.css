@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #6c63ff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+}
+
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* change from 'space-between' to 'flex-start' */
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+.settings-container {
+    background-color: #fff;
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.resume-display-container {
+    width: 75%;
+  align-content: left;
+  align-items: left;
+  align-self: left;
+  text-align: left;
+}
+
+.resume-display {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5b54e2;
+}
+
+.resume-section h3 {
+    font-size: 20px;
+    margin-bottom: 3px; /* decrease the margin-bottom value */
+   clear: both; /* Add this line to start each section on a new line */
+
+}
+
+.resume-section hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 3px; /* add margin-top and set it to a smaller value */
+    margin-bottom: 10px;
+    width: 300%;
+}
+
+.section-content {
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    list-style-type: disc;
+    padding-left: 0px;
+}
+
+.section-content .first-two-items {
+    list-style-type: none; /* Remove the bullet point for the first two items */
+}
+
+
+
+.name {
+    font-size: 30px;
+    color: #6c63ff;
+}
+
+.email,
+.phone {
+    font-size: 14px;
+    color: #666;
+}
+
+
+button[type="button"] {
+    margin-bottom: 10px;
+}
+
+#add-experience {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+}
+
+#add-experience:hover {
+    background-color: #5b54e2;
+}
+
+.hr-line {
+    height: 3px;
+    background-color: #ccc;
+    width: 980px; /* Set the desired fixed width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+

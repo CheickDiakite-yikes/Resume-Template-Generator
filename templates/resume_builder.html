@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="/static/resume_builder_styles.css">
+</head> 
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <div class="container">
+
+      
+    <!-- Input container section -->
+    <div class="settings-container">
+    <h2>Key Inputs</h2>
+    <form class="resume-settings">
+      
+    <!-- Name input -->
+    <div class="form-group">
+    <label for="inputName">Name</label>
+    <input type="text" id="inputName" placeholder="Your Name">
+    </div>
+      
+    <!-- Contact inputs -->
+    <div class="form-group">
+    <label for="inputEmail">Email</label>
+    <input type="email" id="inputEmail" placeholder="Email"></div>
+    <div class="form-group">
+    <label for="inputPhone">Phone</label>
+    <input type="tel" id="inputPhone" placeholder="Phone"></div>
+
+              
+      <div class="form-group">
+      <label for="inputEducation">Education</label>
+      <textarea id="inputEducation" rows="4" cols="30" placeholder="Enter your education details"></textarea> 
+      </div>
+
+      <div class="form-group">
+      <label for="inputAwards">Awards and Certifications</label>
+      <textarea id="inputAwards" rows="4" cols="30" placeholder="Enter your awards and certifications"></textarea> </div>
+              
+      <div class="form-group">
+      <label for="inputExperience">Experience</label>
+      <div id="experience-inputs">
+      <textarea id="inputExperience" rows="4" cols="30" placeholder="Enter your work experience"></textarea>
+      </div>
+      <button type="button" id="add-experience-btn">Add Experience</button>
+      </div>
+
+                
+      <div class="form-group">
+      <label for="inputLeadership">Leadership Experience</label>
+      <textarea id="inputLeadership" rows="4" cols="30" placeholder="Enter your leadership experience"></textarea>
+      </div>
+
+              
+      <div class="form-group">
+      <label for="inputAthletics">Athletic Accomplishments</label>
+      <textarea id="inputAthletics" rows="4" cols="30" placeholder="Enter your athletic accomplishments"></textarea>
+      </div>
+              
+                
+      <div class="form-group">
+      <label for="inputSkills">Computer & Language Skills</label>
+      <textarea id="inputSkills" rows="4" cols="30" placeholder="Enter your computer and language skills"></textarea>
+      </div>
+              
+   
+      <button type="button" id="update-resume-btn">Update Resume</button>
+      <button type="button" id="download-resume-btn">Download Resume</button>
+      </form>
+      </div>
+
+      
+   <!-- Section for the resume display container on the right -->
+    <div id="resume-display-containers">
+    <h2 class="name"></h2>
+    <div class="email"></div>
+    <div class="phone"></div>
+              
+    <div id="education-section" class="resume-section">
+    <h3>Education</h3>
+    <div class="hr-line"></div>
+    <div class="section-content education"></div>
+    </div>
+
+                  
+    <div id="awards-section" class="resume-section">
+    <h3>Awards and Certifications</h3>
+    <div class="hr-line"></div>
+    <div class="section-content awards"></div>
+    </div>
+              
+    
+    <div id="experience-section" class="resume-section">
+    <h3>Experience</h3>
+    <div class="hr-line"></div>
+    <div class="section-content experience"></div>
+    </div>
+              
+    
+    <div id="leadership-section" class="resume-section">
+    <h3>Leadership Experience</h3>
+    <div class="hr-line"></div>
+    <div class="section-content leadership"></div>
+    </div>
+
+              
+    <div id="athletics-section" class="resume-section">
+    <h3>Athletic Accomplishments</h3>
+    <div class="hr-line"></div>
+    <div class="section-content athletics"></div>
+    </div>
+
+
+    <div id="skills-section" class="resume-section">
+    <h3>Computer & Language Skills</h3>
+    <div class="hr-line"></div>
+    <div class="section-content skills"></div>
+    </div>
+  
+    <!-- Other code remains unchanged -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.2.0/jspdf.umd.min.js" crossorigin="anonymous"></script>           
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js" crossorigin="anonymous"></script>
+   <script src="/static/resume_builder.js"></script>
+         
+</body>
+</html>
